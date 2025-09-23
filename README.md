@@ -3,7 +3,11 @@
 
 # Table of contents
 
-[[_TOC_]]
+- [Problem background](#problem)
+- [Contents of this case](#contents)
+- [Software prerequisites](#sofware)
+- [Running the case on an HPC cluster](#running)
+- [Modification of the case](#modification)
 
 
 # Problem background
