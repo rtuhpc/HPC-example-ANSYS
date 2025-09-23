@@ -4,17 +4,17 @@
 # Table of contents
 
 - [Problem background](#problem-background)
-- [Contents of this case](#contents-of-this-case)
+- [Contents of this example](#contents-of-this-example)
 - [Software prerequisites](#software-prerequisites)
-- [Running the case on an HPC cluster](#running-the-case-on-an-hpc-cluster)
-- [Modification of the case](#modification-of-the-case)
+- [Running the example on an HPC cluster](#running-the-example-on-an-hpc-cluster)
+- [Modification of the example](#modification-of-the-example)
 
 # Problem background
 
 Problem background and motivation to use HPC.
 
 
-# Contents of this case
+# Contents of this example
 
 Comment for creators: All demo-cases should contain description of the provided files, at least the base level of the file tree.
 
@@ -23,7 +23,7 @@ Comment for creators: All demo-cases should contain description of the provided 
 Comment for creators: Assumption here is that the case will be used in an HPC environment, not a personal computer. Therefore, long description of software installs is not required. However, this section should also point out alternative ways of launching this case, if applicable.
 
 
-## Running the case on an HPC cluster
+## Running the example on an HPC cluster
 
 ## Obtaining the case
 ## Running the case on Moab cluster
@@ -33,4 +33,4 @@ Comment for creators: Assumption here is that the case will be used in an HPC en
 ##
 
 
-# Modification of the case
+# Modification of the example
