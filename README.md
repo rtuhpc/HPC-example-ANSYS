@@ -3,12 +3,11 @@
 
 # Table of contents
 
-- [Problem background](#problem)
-- [Contents of this case](#contents)
-- [Software prerequisites](#sofware)
-- [Running the case on an HPC cluster](#running)
-- [Modification of the case](#modification)
-
+- [Problem background](#problem-background)
+- [Contents of this case](#contents-of-this-case)
+- [Software prerequisites](#software-prerequisites)
+- [Running the case on an HPC cluster](#running-the-case-on-an-hpc-cluster)
+- [Modification of the case](#modification-of-the-case)
 
 # Problem background
 
