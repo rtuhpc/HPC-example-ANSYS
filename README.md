@@ -23,7 +23,7 @@ Running these cases sequentially on a standard personal computer (PC) would be i
 
 Therefore, HPC is essential for performing efficient, parallelised, and high-resolution simulations of rotating systems, enabling more reliable performance assessment and supporting better design improvements.
 
-
+After the CFD stage, the resulting **pressure distributions** are exported and used for **structural analysis**. These simulations — typically carried out on PCs — allow engineers to test different rotor materials under realistic loading conditions. This coupled workflow (CFD → Structural Analysis) highlights the importance of HPC: without fast, parallel generation of accurate pressure fields, downstream structural simulations would also be more time-consuming.
 
 # Contents of this example
 
@@ -33,14 +33,14 @@ The process begins by creating a simulation case in Fluent, including importing 
 
 These files are uploaded to the HPC cluster, where the main simulation is executed by adjusting the journal file settings and submitting the job. While the cluster performs the computation, additional cases with different speeds or media can be prepared locally and submitted in the same way.
 
-When the HPC simulation is complete, the results (as **cas** and **dat** files) are downloaded. Using ANSYS Workbench, the lift force is extracted from the results, and flow-field visualisation can be performed. 
+When the HPC simulation is complete, the results (as **cas** and **dat** files) are downloaded. Using ANSYS Workbench/Results, the lift force can be extracted, and flow-field visualisation can be performed. 
 
 Finally, the pressure field obtained from Fluent is transferred to a Static Structural module, where blade deformation and Von Mises stresses are computed. Different blade materials can be tested by repeating the structural analysis.
 
 
 Comment for creators: All demo-cases should contain description of the provided files, at least the base level of the file tree.
 
-After the CFD stage, the resulting **pressure distributions** are exported and used for **structural analysis**. These simulations — typically carried out on PCs — allow engineers to test different rotor materials under realistic loading conditions. This coupled workflow (CFD → Structural Analysis) highlights the importance of HPC: without fast, parallel generation of accurate pressure fields, downstream structural simulations would be slow and limited.
+
 
 # Software prerequisites
 
