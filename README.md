@@ -27,7 +27,15 @@ After the CFD stage, the resulting **pressure distributions** are exported and u
 
 # Contents of this example
 
-This example demonstrates a simplified workflow for preparing and running CFD simulations of a rotating system using ANSYS Fluent and an HPC cluster, followed by structural analysis based on the obtained results.
+This example demonstrates a simplified workflow for preparing and running CFD simulations of a rotating system using ANSYS Fluent and an HPC cluster, followed by structural analysis based on the obtained results. An overview of all the files in this repository is below.
+
+- input
+  - `FFF.cas.h5` – Fluent **case file**, containing the simulation setup: geometry, mesh, physics models, boundary conditions, and solver configuration.
+  - `FFF.dat.h5` – Fluent **data file**, containing the simulation results: pressure, velocity fields, turbulence quantities, convergence history, and other computed solution data.
+
+input/
+├── FFF.cas.h5   # Fluent **case file**, containing the simulation setup: geometry, mesh, physics models, boundary conditions, and solver configuration.
+└── FFF.dat.h5   # Fluent **data file**, containing the simulation results: pressure, velocity fields, turbulence quantities, convergence history, and other computed solution data.
 
 The process begins by creating a simulation case in Fluent, including importing the geometry, creating the computational domain and mesh, and defining boundary conditions. Once the initial conditions — such as the working medium and rotational speed — are selected, a short preliminary simulation is performed to verify the case and generate the necessary **cas** and **dat** files.
 
