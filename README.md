@@ -29,15 +29,16 @@ After the CFD stage, the resulting **pressure distributions** are exported and u
 
 This example demonstrates a simplified workflow for preparing and running CFD simulations of a rotating system using ANSYS Fluent and an HPC cluster, followed by structural analysis based on the obtained results. An overview of all the files in this repository is below.
 
-- `input`
-  - `FFF.cas.h5` – Fluent **case file**, containing the simulation setup: geometry, mesh, physics models, boundary conditions, and solver configuration.
-  - `FFF.dat.h5` – Fluent **data file**, containing the simulation results: pressure, velocity fields, turbulence quantities, convergence history, and other computed solution data.
+- `input` - directory containing Fluent simulation files
+  - `FFF.cas.h5` – Fluent **case file**, containing the simulation setup: geometry, mesh, physics models, boundary conditions, and solver configuration
+  - `FFF.dat.h5` – Fluent **data file**, containing the simulation results: pressure, velocity fields, turbulence quantities, convergence history, and other computed solution data
 
-`input/`
+- `instruction.journal` – A Fluent **journal file** that automates the simulation workflow. It specifies which case file to load, how many iterations to run, which settings to modify, and how to save the output results. 
 
-`├── FFF.cas.h5`   # Fluent **case file**, containing the simulation setup: geometry, mesh, physics models, boundary conditions, and solver configuration.
+- `run_fluent.sh` – A **shell script** used to submit the Fluent job on the HPC cluster. It loads the required modules, calls Fluent in batch mode with the journal file, and manages resource settings such as CPU allocation, parallel execution, and log output.
 
-`└── FFF.dat.h5`   # Fluent **data file**, containing the simulation results: pressure, velocity fields, turbulence quantities, convergence history, and other computed solution data.
+- `README.md` - This readme file
+
 
 The process begins by creating a simulation case in Fluent, including importing the geometry, creating the computational domain and mesh, and defining boundary conditions. Once the initial conditions — such as the working medium and rotational speed — are selected, a short preliminary simulation is performed to verify the case and generate the necessary **cas** and **dat** files.
 
