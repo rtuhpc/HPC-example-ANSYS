@@ -1,0 +1,8 @@
+; READ CASE FILE
+/file/read-case-data input/FFF.1.cas.h5
+; SIMULATION INSTRUCTION
+/solve/iterate 1000
+
+; WRITE case and data file
+/file/write-case-data input/results.cas yes
+exit yes
