@@ -1,5 +1,5 @@
 ; READ CASE FILE
-/file/read-case-data input/FFF.1.cas.h5
+/file/read-case-data input/FFF.cas.h5
 ; SIMULATION INSTRUCTION
 /solve/iterate 1000
 
