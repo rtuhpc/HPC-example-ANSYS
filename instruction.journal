@@ -4,5 +4,5 @@
 /solve/iterate 1000
 
 ; WRITE case and data file
-/file/write-case-data input/results.cas yes
+/file/write-case-data output/results.cas yes
 exit yes
