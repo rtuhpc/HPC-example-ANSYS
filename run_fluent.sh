@@ -1,7 +1,7 @@
 #!/bin/sh
 #PBS -N fluent_job
 #PBS -q batch
-#PBS -l walltime=00:10:00
+#PBS -l walltime=01:00:00
 #PBS -l nodes=1:ppn=2,pmem=4g,feature=vasara
 #PBS -j oe
 
