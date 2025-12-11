@@ -68,6 +68,12 @@ Alternatively, the repository can be downloaded as a `.zip` archive and transfer
 ## Running the example on an HPC cluster
 
 ## Obtaining the case
+
+You can download this case directly from GitHub using the `git clone` command shown below.  
+Alternatively, the repository can be downloaded as a `.zip` or `.tar` archive and transferred to the HPC cluster by any preferred method.
+
+`git clone https://gitlab.com/euro...`
+
 ## Running the case on Moab cluster
 ## Running the case on SLURM cluster
 ## Post-processing and visualization
