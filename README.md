@@ -74,6 +74,7 @@ Alternatively, the repository can be downloaded as a `.zip` archive and transfer
 
 ```bash
 git clone https://github.com/rtuhpc/HPC-example-ANSYS.git
+```
 
 ## Running the case on Moab cluster
 ## Running the case on SLURM cluster
