@@ -55,7 +55,15 @@ Comment for creators: All demo-cases should contain description of the provided 
 
 # Software prerequisites
 
-Comment for creators: Assumption here is that the case will be used in an HPC environment, not a personal computer. Therefore, long description of software installs is not required. However, this section should also point out alternative ways of launching this case, if applicable.
+**Git** — Used to access the prepared example directly from GitHub via the `clone` command.  
+Alternatively, the repository can be downloaded as a `.zip` archive and transferred to the HPC cluster or a local workstation by other means.
+
+**ANSYS Workbench 2023** — Used for setting up the CFD case in Fluent, generating the mesh, defining boundary conditions, and exporting the necessary `.cas.h5` and `.dat.h5` files.  
+Workbench is also used for post-processing: importing HPC-generated results, visualizing pressure and force distributions, and performing Structural Analysis to evaluate deformation and Von Mises stresses.
+
+A free **ANSYS Student Version** (for personal and educational use) is available here:  
+https://www.ansys.com/academic/students/ansys-student
+
 
 
 ## Running the example on an HPC cluster
