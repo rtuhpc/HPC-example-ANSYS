@@ -70,9 +70,9 @@ Alternatively, the repository can be downloaded as a `.zip` archive and transfer
 ## Obtaining the case
 
 You can download this case directly from GitHub using the `git clone` command shown below.  
-Alternatively, the repository can be downloaded as a `.zip` or `.tar` archive and transferred to the HPC cluster by any preferred method.
+Alternatively, the repository can be downloaded as a `.zip` archive and transferred to the HPC cluster by any preferred method.
 
-`git clone https://gitlab.com/euro...`
+`git clone [https://github.com/rtuhpc/HPC-example-ANSYS.git](https://github.com/rtuhpc/HPC-example-ANSYS.git)`
 
 ## Running the case on Moab cluster
 ## Running the case on SLURM cluster
