@@ -60,8 +60,7 @@ Alternatively, the repository can be downloaded as a `.zip` archive and transfer
 
 - **ANSYS Workbench 2023** — Used for setting up the CFD case in Fluent, generating the mesh, defining boundary conditions, and exporting the necessary `.cas.h5` and `.dat.h5` files. Workbench is also used for post-processing: importing HPC-generated results, visualizing pressure and force distributions, and performing Structural Analysis to evaluate deformation and Von Mises stresses.
 
--- A free **ANSYS Student Version** (for personal and educational use) is available here:  
-https://www.ansys.com/academic/students/ansys-student
+  - A free **ANSYS Student Version** (for personal and educational use) is available here: https://www.ansys.com/academic/students/ansys-student
 
 
 
