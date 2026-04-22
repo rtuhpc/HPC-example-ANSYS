@@ -79,13 +79,13 @@ git clone https://github.com/rtuhpc/HPC-example-ANSYS.git
 ```
 
 ## The PBS Job Script
-The run_fluent.sh (or .pbs) script is used to request CPU cores, memory, and walltime.
+The `run_fluent.sh` (or .pbs) script is used to request CPU cores, memory, and walltime.
 
 ## Submitting the Job
-Once your files (FFF.cas.h5, instruction.journal, and run_fluent.pbs) are uploaded to the cluster, submit the job using the qsub command:
+Once your files (`FFF.cas.h5`, `instruction.journal`, and `run_fluent.sh`) are uploaded to the cluster, submit the job using the `qsub` command:
 
 ```bash
-qsub run_fluent.pbs
+qsub run_fluent.sh
 ```
 
 ## Monitoring the Job
@@ -102,15 +102,13 @@ qdel JOB_ID
 ## The Fluent Journal File (instruction.journal)
 For the simulation to run without user interaction, the journal file must contain the TUI (Text User Interface) commands. A basic example:
 ```
-Scheme
 /file/read-case-data input/FFF.cas.h5
 /solve/iterate 500
-/file/write-case-data results/FFF_final.cas.h5
+/file/write-case-data results.cas.h5
 exit
 yes
 ```
 
-## Running the case on SLURM cluster
 ## Post-processing and visualization
 After the simulation is completed on the HPC cluster, the resulting `.cas.h5` and `.dat.h5` files are downloaded to a local workstation.
 
