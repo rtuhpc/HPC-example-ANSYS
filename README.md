@@ -65,7 +65,9 @@ Alternatively, the repository can be downloaded as a `.zip` archive and transfer
 
 
 
-## Running the example on an HPC cluster
+# Running the example on an HPC cluster
+
+To run ANSYS Fluent on an HPC cluster managed by PBS (such as OpenPBS or PBS Professional), you need to submit a job script that defines the required resources and the execution commands.
 
 ## Obtaining the case
 
@@ -76,7 +78,38 @@ Alternatively, the repository can be downloaded as a `.zip` archive and transfer
 git clone https://github.com/rtuhpc/HPC-example-ANSYS.git
 ```
 
-## Running the case on Moab cluster
+## The PBS Job Script
+The run_fluent.sh (or .pbs) script is used to request CPU cores, memory, and walltime.
+
+## Submitting the Job
+Once your files (FFF.cas.h5, instruction.journal, and run_fluent.pbs) are uploaded to the cluster, submit the job using the qsub command:
+
+```bash
+qsub run_fluent.pbs
+```
+
+## Monitoring the Job
+You can check the status of your simulation using:
+```bash
+qstat -u your_username
+```
+
+If you need to cancel the job, use:
+```bash
+qdel JOB_ID
+```
+
+## The Fluent Journal File (instruction.journal)
+For the simulation to run without user interaction, the journal file must contain the TUI (Text User Interface) commands. A basic example:
+```
+Scheme
+/file/read-case-data input/FFF.cas.h5
+/solve/iterate 500
+/file/write-case-data results/FFF_final.cas.h5
+exit
+yes
+```
+
 ## Running the case on SLURM cluster
 ## Post-processing and visualization
 After the simulation is completed on the HPC cluster, the resulting `.cas.h5` and `.dat.h5` files are downloaded to a local workstation.
