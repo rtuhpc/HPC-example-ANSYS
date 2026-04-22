@@ -79,8 +79,28 @@ git clone https://github.com/rtuhpc/HPC-example-ANSYS.git
 ## Running the case on Moab cluster
 ## Running the case on SLURM cluster
 ## Post-processing and visualization
+After the simulation is completed on the HPC cluster, the resulting `.cas.h5` and `.dat.h5` files are downloaded to a local workstation.
+
+Post-processing is performed in ANSYS Fluent or ANSYS Workbench:
+
+- Visualize velocity and pressure fields
+- Generate contour plots and streamlines
+- Extract forces such as lift and drag
+- Analyse convergence history
+
+These results are used to evaluate the performance of the rotating system under different operating conditions.
+
+Additionally, pressure distributions can be exported and used as input for structural simulations.
 ##
 ##
 
 
 # Modification of the example
+
+This example can be extended in several ways to explore the capabilities of HPC-based simulations:
+
+- Change rotational speed (RPM) to analyse performance variation
+- Modify working medium (air vs water)
+- Adjust mesh resolution to study accuracy vs computational cost
+- Test different turbulence models
+- Alter rotor geometry (blade angle, diameter)
