@@ -1,5 +1,11 @@
 # Summary
 
+This repository provides a practical example of a **coupled CFD-Structural analysis workflow** for rotating systems (e.g., propellers) using **ANSYS Fluent** and **HPC cluster** resources. 
+
+The primary goal of this example is to demonstrate how to:
+* *Leverage HPC Power:* Transition from time-consuming local simulations to high-performance parallel computing using **PBS** scheduling.
+* *Automate Workflows:* Use Fluent **journal files** (.journal) and shell scripts (.sh) to run simulations in batch mode without a graphical interface.
+* *Perform Multi-Physics Analysis:* Export high-fidelity pressure distributions from CFD simulations to perform downstream *Structural Analysis* (deformation and stress) on a local workstation.
 
 # Table of contents
 
